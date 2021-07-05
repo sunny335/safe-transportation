@@ -12,8 +12,6 @@ import Signup from 'src//containers/Signup/Signup';
 import UserSignin from 'src/components/UserSignin';
 import UserSignup from 'src/components/userSignUp';
 import userAuthReducer from 'src/reducers/userAuth.reducer';
-import SearchProperty from '../SearchProperty';
-import CreatePost from '../CreatePost';
 
 import { isUserLoggedIn, isUserFormLoggedIn } from '../../actions';
 // Pages
@@ -92,27 +90,6 @@ const App = () => {
               }
             />
 
-            <Route
-              path="/searchProperty"
-              render={(props) =>
-                withTitle({
-                  component: SearchProperty,
-                  title: 'Docs',
-                  ...props,
-                })
-              }
-            />
-
-            <Route
-              path="/createpost"
-              render={(props) =>
-                withTitle({
-                  component: CreatePost,
-                  title: 'Docs',
-                  ...props,
-                })
-              }
-            />
             {/* Doc Page */}
             <Route
               path="/docs"

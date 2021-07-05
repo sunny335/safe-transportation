@@ -16,7 +16,7 @@ const Header = () => {
   const renderLoggedInLinks = () => {
     return (
       <Nav>
-        <li className="nav-item">
+        <li className="nav-item bg-success rounded-pill px-2 text-white">
           <span className="nav-link" onClick={logout}>
             Signout
           </span>
@@ -54,43 +54,39 @@ const Header = () => {
       // bg="dark"
       variant=""
       style={{ zIndex: 1, backgroundColor: '#f5f5f5' }}
-      className="navbar-fixed-top"
+      className="navbar-fixed-top pe-4"
     >
       <Container fluid className="justify-content-between">
         <Link className="navbar-brand  p-2 me-5" to="/home">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYEAW3RuD1C_v7qLtETEHS0GCG5kXmNufjRzFh3Ebig0z8I6n7L0v1KnzuuiEMtCNiRQ&usqp=CAU"
-            alt=""
-            height="60px"
-            // className="w-25"
-          />
+          Safe Transport
         </Link>
-        <Link className="navbar-brand px-2" to="/searchProperty">
-          Search Properties
-        </Link>
-        <Link className="navbar-brand px-2" to="/createpost">
-          create post
-        </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="justify-content-end"
-        >
-          <Nav className="mr-auto">
-            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+        <div className="d-flex">
+          <Nav className="ms-auto justify-content-end me-3">
+            <li className="nav-item">
+              <NavLink to="/" className="nav-link me-3 ">
+                Home
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/map" className="nav-link ">
+                Map
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/report" className="nav-link ">
+                Report
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/blog" className="nav-link ">
+                Blog
+              </NavLink>
+            </li>
           </Nav>
+
           {auth.authenticate ? renderLoggedInLinks() : renderNonLoggedInLinks()}
-        </Navbar.Collapse>
+        </div>
       </Container>
     </Navbar>
   );
