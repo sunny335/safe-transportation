@@ -60,30 +60,30 @@ const Header = () => {
           <img src={Logo} alt="" />
         </Link>
         <div className="d-flex">
-          <Nav className="ms-auto justify-content-end me-3">
+          <Nav className="ms-auto justify-content-end me-3 custrom-nav">
             <li className="nav-item">
-              <NavLink to="/" className="nav-link me-3 ">
+              <NavLink to="/" className="nav-link me-4 ">
                 Home
               </NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink to="/map" className="nav-link ">
+              <NavLink to="/map" className="nav-link me-4">
                 Report
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/report" className="nav-link ">
+              <NavLink to="/report" className="nav-link me-4">
                 Blog
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/blog" className="nav-link ">
+              <NavLink to="/blog" className="nav-link me-4">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/blog" className="nav-link ">
+              <NavLink to="/blog" className="nav-link me-4">
                 Contact Us
               </NavLink>
             </li>
