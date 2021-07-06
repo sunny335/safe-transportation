@@ -6,6 +6,8 @@ import { userSignup } from '../../actions';
 import Layout from 'src/components/Layout/Layout';
 import Input from 'src/components/Input/Input';
 
+import loginogo from '../../assets/img/loginogo.png';
+
 import css from './style.css';
 
 const Signup = () => {
@@ -44,7 +46,7 @@ const Signup = () => {
     <Layout>
       <section className="signin">
         <Container>
-          <Col md={12} className="text-center">
+          <Col md={12} className="text-center ">
             {user.message && (
               <Alert variant="success">
                 <Alert.Heading>{user.message}</Alert.Heading>
@@ -54,8 +56,11 @@ const Signup = () => {
           <Row>
             <Col
               md={{ span: 6, offset: 3 }}
-              className="bg-dark shadow-lg py-5 mt-5 px-5"
+              className="py-5 mt-5 px-5 card-style"
             >
+              <div className=" text-center">
+                <img src={loginogo} alt="" />
+              </div>
               <Form onSubmit={userSignupform}>
                 <Row>
                   <Col md={6}>
@@ -96,14 +101,20 @@ const Signup = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   errorMessage=""
                 />
-                <Button variant="primary" type="submit" className="mt-4">
-                  Submit
-                </Button>
+                <div className="text-center">
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    className="mt-4 button"
+                  >
+                    Submit
+                  </Button>
+                </div>
               </Form>
-              <div md={12} className="text-center">
+              <div md={12} className="text-center submit-text">
                 are you admin?
                 <h6 className="d-inline">
-                  <Link to="signup" className="text-decoration-none">
+                  <Link to="UserSignin" className="text-decoration-none">
                     SignUp here
                   </Link>
                 </h6>

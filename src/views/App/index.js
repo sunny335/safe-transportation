@@ -49,7 +49,7 @@ const App = () => {
                 })
               }
             />
-            <Route
+            {/* <Route
               path="/signin"
               render={(props) =>
                 withTitle({
@@ -58,8 +58,8 @@ const App = () => {
                   ...props,
                 })
               }
-            />
-            <Route
+            /> */}
+            {/* <Route
               path="/Signup"
               render={(props) =>
                 withTitle({
@@ -68,7 +68,7 @@ const App = () => {
                   ...props,
                 })
               }
-            />
+            /> */}
             <Route
               path="/userSignup"
               render={(props) =>

@@ -78,7 +78,7 @@ const Signin = () => {
                 if you have an account?
                 <h6 className="d-inline">
                   {/* signin */}
-                  <Link to="/" className="text-decoration-none">
+                  <Link to="/userSignup" className="text-decoration-none">
                     Signup
                   </Link>
                 </h6>

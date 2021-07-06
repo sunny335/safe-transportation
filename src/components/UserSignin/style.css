@@ -2,8 +2,25 @@
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../assets//img//Signin.jpg');
   background-size: cover;
-
   background-position: center center;
-  height: 100vh;
+  height: calc(100vh - 81px);
   color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-style {
+  background: #fff;
+  border-radius: 10px;
+}
+.submit-text {
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+.submit-text h6 {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0 5px;
+  color: #ef4358;
 }
