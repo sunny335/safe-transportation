@@ -8,7 +8,7 @@ import Input from 'src/components/Input/Input';
 
 import loginogo from '../../assets/img/loginogo.png';
 
-import css from './style.css';
+import './style.css';
 
 const Signup = () => {
   const [firstName, setFirstName] = useState('');
@@ -112,10 +112,10 @@ const Signup = () => {
                 </div>
               </Form>
               <div md={12} className="text-center submit-text">
-                are you admin?
+                if you have an account?
                 <h6 className="d-inline">
                   <Link to="UserSignin" className="text-decoration-none">
-                    SignUp here
+                    LogIn
                   </Link>
                 </h6>
               </div>

@@ -9,7 +9,7 @@ import { Link, Redirect } from 'react-router-dom';
 
 import loginogo from '../../assets/img/loginogo.png';
 
-import css from './style.css';
+import './style.css';
 
 const Signin = () => {
   const [email, setEmail] = useState('');
@@ -74,7 +74,7 @@ const Signin = () => {
                   </Button>
                 </div>
               </Form>
-              <div md={12} className="text-center submit-text">
+              <div md={12} className="text-center submit-text my-3">
                 if you have an account?
                 <h6 className="d-inline">
                   {/* signin */}
