@@ -4,6 +4,8 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { signout } from '../../actions/auth.actions';
 
+import Logo from '../../assets/icon/Logo.png';
+
 const Header = () => {
   const location = useLocation();
 
@@ -55,7 +57,7 @@ const Header = () => {
     >
       <Container fluid className="justify-content-between">
         <Link className="navbar-brand  p-2 me-5" to="/home">
-          Safe Transport
+          <img src={Logo} alt="" />
         </Link>
         <div className="d-flex">
           <Nav className="ms-auto justify-content-end me-3">
