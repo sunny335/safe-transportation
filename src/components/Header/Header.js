@@ -28,22 +28,19 @@ const Header = () => {
     return (
       <Nav>
         <li className="nav-item">
-          <NavLink
-            to="/UserSignin"
-            className="nav-link me-3 bg-secondary border rounded"
-          >
+          <NavLink to="/UserSignin" className="nav-link me-3 button">
             Signin
           </NavLink>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink
             to="/userSignup"
             className="nav-link border rounded me-3 btn btn-secondary"
           >
             Signup
           </NavLink>
-        </li>
+        </li> */}
       </Nav>
     );
   };
@@ -53,7 +50,7 @@ const Header = () => {
       expand="lg"
       // bg="dark"
       variant=""
-      style={{ zIndex: 1, backgroundColor: '#f5f5f5' }}
+      style={{ zIndex: 1, backgroundColor: '#fff' }}
       className="navbar-fixed-top pe-4"
     >
       <Container fluid className="justify-content-between">
@@ -70,17 +67,22 @@ const Header = () => {
 
             <li className="nav-item">
               <NavLink to="/map" className="nav-link ">
-                Map
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/report" className="nav-link ">
                 Report
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/blog" className="nav-link ">
+              <NavLink to="/report" className="nav-link ">
                 Blog
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/blog" className="nav-link ">
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/blog" className="nav-link ">
+                Contact Us
               </NavLink>
             </li>
           </Nav>
