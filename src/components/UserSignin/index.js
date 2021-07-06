@@ -7,6 +7,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
+import loginogo from '../../assets/img/loginogo.png';
+
 import css from './style.css';
 
 const Signin = () => {
@@ -37,8 +39,11 @@ const Signin = () => {
           <Row>
             <Col
               md={{ span: 6, offset: 3 }}
-              className="bg-dark shadow-lg py-5 mt-5 px-5"
+              className="py-5 mt-5 px-5 card-style"
             >
+              <div className=" text-center">
+                <img src={loginogo} alt="" />
+              </div>
               <Form onSubmit={userFormLogin}>
                 <Input
                   label="Email"
@@ -59,15 +64,22 @@ const Signin = () => {
                   errorMessage=""
                   className="py-5"
                 />
-                <Button variant="primary" type="submit" className="mt-4">
-                  Submit
-                </Button>
+                <div className="text-center ">
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    className="mt-4 button"
+                  >
+                    Sign in
+                  </Button>
+                </div>
               </Form>
-              <div md={12} className="text-center">
-                are you admin?
+              <div md={12} className="text-center submit-text">
+                if you have an account?
                 <h6 className="d-inline">
-                  <Link to="signin" className="text-decoration-none">
-                    login here
+                  {/* signin */}
+                  <Link to="/" className="text-decoration-none">
+                    Signup
                   </Link>
                 </h6>
               </div>
