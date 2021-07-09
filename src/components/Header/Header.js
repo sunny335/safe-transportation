@@ -68,22 +68,22 @@ const Header = () => {
             </li>
 
             <li className="nav-item">
-              <NavLink to="/map" className="nav-link me-4">
+              <NavLink to="/report" className="nav-link me-4">
                 Report
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/report" className="nav-link me-4">
+              <NavLink to="/blog" className="nav-link me-4">
                 Blog
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/blog" className="nav-link me-4">
+              <NavLink to="/about" className="nav-link me-4">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/blog" className="nav-link me-4">
+              <NavLink to="/contact" className="nav-link me-4">
                 Contact Us
               </NavLink>
             </li>
