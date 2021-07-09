@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 import Header from 'src/components/Header/Header';
 import Footer from 'src/components/Footer/Footer';

@@ -1,0 +1,33 @@
+.hero_sec_main {
+  .hero_sec_title {
+    margin-top: 150px;
+    h1 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 96px;
+      text-transform: capitalize;
+      color: #ee3f5c;
+    }
+    h2 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 72px;
+      text-transform: capitalize;
+      color: #231543;
+    }
+    p {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: justify;
+      text-transform: capitalize;
+      color: #797979;
+    }
+  }
+}
