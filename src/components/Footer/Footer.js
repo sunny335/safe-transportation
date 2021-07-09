@@ -1,9 +1,9 @@
 import React from 'react';
-import imgFooter from '../../assets/icon/Footer.png';
+import imgFooter from '../../assets/img/Footer.png';
 const Footer = () => {
   return (
     <div>
-      <img src={imgFooter} alt="" />
+      <img width="100%" src={imgFooter} alt="" />
     </div>
   );
 };
