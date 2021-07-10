@@ -24,6 +24,7 @@ import { isUserLoggedIn, isUserFormLoggedIn } from '../../actions';
 // Pages
 const Docs = lazy(() => import('../Documentation'));
 const Home = lazy(() => import('../Home'));
+const ScanResult = lazy(() => import('../ScanResult'));
 
 const App = () => {
   const dispatch = useDispatch();
@@ -93,6 +94,17 @@ const App = () => {
                 withTitle({
                   component: UserSignin,
                   title: 'UserSignin',
+                  ...props,
+                })
+              }
+            />
+
+            <Route
+              path="/scan-result"
+              render={(props) =>
+                withTitle({
+                  component: ScanResult,
+                  title: 'ScanResult',
                   ...props,
                 })
               }
