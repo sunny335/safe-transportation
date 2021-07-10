@@ -1,0 +1,29 @@
+form {
+  margin-top: 30px;
+  .form-group {
+    margin-bottom: 20px;
+    label {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    input {
+      padding: 10px 8px !important;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    select {
+      padding: 10px 8px !important;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    textarea {
+      height: 150px;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+}
