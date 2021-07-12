@@ -23,9 +23,9 @@ const Post = ({ post, setCurrentId }) => {
   const classes = useStyles();
   const history = useHistory();
   const user = JSON.parse(localStorage.getItem('profile'));
-  const [likes, setLikes] = useState(post?.likes);
+  // const [likes, setLikes] = useState(post?.likes);
   const userId = user?.result.googleId || user?.result?._id;
-  const hasLikedPost = post.likes.find((like) => like === userId);
+  // const hasLikedPost = post.likes.find((like) => like === userId);
   console.log('user', user);
 
   const openPost = () => {

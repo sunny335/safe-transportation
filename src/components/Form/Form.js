@@ -9,12 +9,9 @@ import { createPost, updatePost } from '../../actions/posts';
 
 const Form = ({ currentId, setCurrentId }) => {
   const [postData, setPostData] = useState({
-    title: '',
     phone: '',
-    price: '',
     location: '',
     message: '',
-    tags: [],
     selectedFile: '',
   });
   const post = useSelector((state) =>
@@ -35,9 +32,7 @@ const Form = ({ currentId, setCurrentId }) => {
   const clear = () => {
     setCurrentId(0);
     setPostData({
-      title: '',
       message: '',
-      tags: [],
       selectedFile: '',
       phone: '',
       price: '',
