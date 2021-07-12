@@ -7,15 +7,10 @@ import Form from 'src/components/Form/Form';
 const CreatePost = () => {
   const [currentId, setCurrentId] = useState(1);
   return (
-    <Layout>
+    <>
+      <Form currentId={currentId} setCurrentId={setCurrentId} />
       {/* <Posts setCurrentId={setCurrentId} /> */}
-      <Container>
-        <Row>
-          <Col>
-            <Form currentId={currentId} setCurrentId={setCurrentId} />
-          </Col>
-        </Row>
-      </Container>
+
       {/* <section className="searchPage my-5">
         <Container>
           <Row>
@@ -116,7 +111,7 @@ const CreatePost = () => {
           </Row>
         </Container>
       </section> */}
-    </Layout>
+    </>
   );
 };
 

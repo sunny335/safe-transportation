@@ -13,7 +13,7 @@ const Posts = ({ setCurrentId }) => {
   const classes = useStyles();
   if (!posts.length && !isLoading) return 'No posts';
   useEffect(() => {
-    axios.get(`http://localhost:9000/api/getposts`).then((res) => {
+    axios.get(`http://localhost:8000/api/getposts`).then((res) => {
       const persons = res;
       // thissetState({ persons });
       setData(persons.data.posts);

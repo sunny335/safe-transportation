@@ -1,15 +1,9 @@
 import React from 'react';
-
+import imgFooter from '../../assets/img/Footer.png';
 const Footer = () => {
   return (
-    <div
-      style={{
-        padding: '20px',
-        marginTop: '60px',
-      }}
-      className="text-center bg-secondary"
-    >
-      <h1>Footer</h1>
+    <div>
+      <img width="100%" src={imgFooter} alt="" />
     </div>
   );
 };

@@ -13,18 +13,20 @@
 }
 
 .button {
-  background: linear-gradient(90deg, #3cdd9f, #16cdd3);
+  background: linear-gradient(88.43deg, #f93543 -4.54%, #fe8b6e 108.13%),
+    #c4c4c4 !important;
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 45px !important;
   font-size: 17px;
   font-weight: 700;
-  padding: 8px 20px;
-  border-radius: 5px;
-  border: none;
+  padding: 10px 27px !important;
   outline: none;
   cursor: pointer;
   &:active {
-    :active {
-      background: #4cc2e9;
-    }
+    background: #fe8b6e !important;
+  }
+  &:hover {
+    color: #fff;
   }
 }

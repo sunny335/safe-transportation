@@ -64,7 +64,7 @@ const Signin = () => {
                 are you user?
                 <h6 className="d-inline">
                   <Link to="userSignin" className="text-decoration-none">
-                    login here
+                    login
                   </Link>
                 </h6>
               </div>

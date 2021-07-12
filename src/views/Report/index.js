@@ -1,65 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
-  Container,
-  Row,
-  Col,
   Button,
+  Col,
+  Container,
   Form,
+  Row,
   FormGroup,
   Label,
   Input,
+  FormText,
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
+import HeadingTitle1 from 'src/components/HeadingTitle1';
 import Header from 'src/components/Header/Header';
 import Footer from 'src/components/Footer/Footer';
-import HeadingTitle1 from 'src/components/HeadingTitle1';
-
-import Hero_Image from 'src/assets/img/home/Hero_Image.png';
-import Feedback from 'src/assets/img/home/Feedback.png';
 import congratulations from 'src/assets/img/congratulations.png';
 import agree from 'src/assets/img/agree.png';
+import CreatePost from '../CreatePost';
 
-const Home = () => {
+const Report = () => {
   return (
     <>
       <Header />
-      <Container>
-        <section className="hero_sec_main">
-          <Row>
-            <Col md={6}>
-              <div className="hero_sec_title">
-                <h1>we want </h1>
-                <h2>safe transportation system.</h2>
-                <p>
-                  Existing traffic complaint reporting systems only receive a
-                  report from the witness manually or via calls.
-                </p>
-                <div>
-                  <Link
-                    to="/scan-result"
-                    className="button me-2"
-                    style={{ textDecoration: 'none' }}
-                  >
-                    {' '}
-                    Scan QR Code
-                  </Link>
-                  <Link
-                    to="#"
-                    style={{ color: '#EE3F5C', textDecoration: 'none' }}
-                  >
-                    {' '}
-                    Scan QR Code
-                  </Link>
-                </div>
-              </div>
-            </Col>
-            <Col md={6}>
-              <img width="100%" src={Hero_Image} alt="" />
-            </Col>
-          </Row>
-        </section>
-      </Container>
       <Container>
         <HeadingTitle1
           title="We are ready to Help You."
@@ -94,8 +57,8 @@ const Home = () => {
                 more info
               </Link>
             </span>
-            <Form>
-              <FormGroup>
+            {/* <Form> */}
+            {/* <FormGroup>
                 <Label for="exampleSelect">Categories:</Label>
                 <Input type="select" name="select" id="exampleSelect">
                   <option>1</option>
@@ -119,17 +82,15 @@ const Home = () => {
                 <Input type="textarea" name="text" id="exampleText" />
               </FormGroup>
               <img src={agree} alt="" className="img-fluid mb-4" />
-              <Button className="button">Submit</Button>
-            </Form>
+              <Button className="button">Submit</Button> */}
+            {/* </Form> */}
+            <CreatePost />
           </Col>
         </Row>
       </Container>
-      <section>
-        <img width="100%" src={Feedback} alt="" />
-      </section>
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Report;

@@ -97,11 +97,11 @@ const Signup = () => {
                   Submit
                 </Button>
               </Form>
-              <div md={12} className="text-center">
+              <div md={12} className="text-center my-3">
                 are you user?
                 <h6 className="d-inline">
                   <Link to="userSignup" className="text-decoration-none">
-                    signUp here
+                    signUp
                   </Link>
                 </h6>
               </div>

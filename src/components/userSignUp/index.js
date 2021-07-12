@@ -6,7 +6,9 @@ import { userSignup } from '../../actions';
 import Layout from 'src/components/Layout/Layout';
 import Input from 'src/components/Input/Input';
 
-import css from './style.css';
+import loginogo from '../../assets/img/loginogo.png';
+
+import './style.css';
 
 const Signup = () => {
   const [firstName, setFirstName] = useState('');
@@ -44,7 +46,7 @@ const Signup = () => {
     <Layout>
       <section className="signin">
         <Container>
-          <Col md={12} className="text-center">
+          <Col md={12} className="text-center ">
             {user.message && (
               <Alert variant="success">
                 <Alert.Heading>{user.message}</Alert.Heading>
@@ -54,8 +56,11 @@ const Signup = () => {
           <Row>
             <Col
               md={{ span: 6, offset: 3 }}
-              className="bg-dark shadow-lg py-5 mt-5 px-5"
+              className="py-5 mt-5 px-5 card-style"
             >
+              <div className=" text-center">
+                <img src={loginogo} alt="" />
+              </div>
               <Form onSubmit={userSignupform}>
                 <Row>
                   <Col md={6}>
@@ -96,15 +101,21 @@ const Signup = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   errorMessage=""
                 />
-                <Button variant="primary" type="submit" className="mt-4">
-                  Submit
-                </Button>
+                <div className="text-center">
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    className="mt-4 button"
+                  >
+                    Submit
+                  </Button>
+                </div>
               </Form>
-              <div md={12} className="text-center">
-                are you admin?
+              <div md={12} className="text-center submit-text">
+                if you have an account?
                 <h6 className="d-inline">
-                  <Link to="signup" className="text-decoration-none">
-                    SignUp here
+                  <Link to="UserSignin" className="text-decoration-none">
+                    LogIn
                   </Link>
                 </h6>
               </div>
