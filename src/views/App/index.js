@@ -12,8 +12,10 @@ import Signup from 'src//containers/Signup/Signup';
 import UserSignin from 'src/components/UserSignin';
 import UserSignup from 'src/components/userSignUp';
 import userAuthReducer from 'src/reducers/userAuth.reducer';
+import { isUserLoggedIn, isUserFormLoggedIn } from 'src/actions';
+import message from '../Posts/Posts';
+import report from '../CreatePost';
 
-import { isUserLoggedIn, isUserFormLoggedIn } from '../../actions';
 // Pages
 const Docs = lazy(() => import('../Documentation'));
 const Home = lazy(() => import('../Home'));
@@ -89,7 +91,26 @@ const App = () => {
                 })
               }
             />
-
+            <Route
+              path="/message"
+              render={(props) =>
+                withTitle({
+                  component: message,
+                  title: 'Docs',
+                  ...props,
+                })
+              }
+            />
+            <Route
+              path="/report"
+              render={(props) =>
+                withTitle({
+                  component: report,
+                  title: 'Docs',
+                  ...props,
+                })
+              }
+            />
             {/* Doc Page */}
             <Route
               path="/docs"

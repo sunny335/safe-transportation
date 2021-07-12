@@ -7,6 +7,7 @@ import orderReducer from './order.reducers';
 import userRegistration from './userRegistration.reducer';
 import userAuth from './userAuth.reducer';
 import properties from './properties';
+import posts from './posts';
 
 const rootReducer = combineReducers({
   auth: authReducer,
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
   userRegistration,
   userAuth,
   properties,
+  posts,
 });
 
 export default rootReducer;
